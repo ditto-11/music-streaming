@@ -1,0 +1,102 @@
+body {
+  font-family: Roboto;
+  font-size: 14px;
+  background-color: rgb(22, 22, 22);
+  padding-left: 220px;
+  padding-bottom: 1000px;
+  padding-top: 60px;
+}
+
+.album-scroller-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.album-scroller-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.album-scroller-title {
+  color: white;
+  font-size: 18px;
+}
+
+.album-scroller-upper button {
+  background-color: rgb(39, 39, 39);
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.album-scroller {
+  display: grid;
+  column-gap: 20px;
+  grid-auto-flow: column;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.album-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 270px;
+}
+.album-cover {
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+.album-title {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: white;
+}
+.author {
+  margin-bottom: 4px;
+  color: rgb(99, 99, 99);
+  font-size: 14px;
+}
+.more-details {
+  display: flex;
+  align-items: center;
+}
+.year-release {
+  font-size: 10px;
+  margin-right: 10px;
+  color: rgb(99, 99, 99);
+}
+.explicit-content {
+  font-size: 10px;
+  color: rgb(176, 173, 173);
+  padding: 2px 8px;
+  background-color: rgb(43, 43, 43);
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.sound-quality {
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(72, 164, 132);
+  padding: 2px 8px;
+  background-color: rgb(28, 73, 67);
+  border-radius: 4px;
+}

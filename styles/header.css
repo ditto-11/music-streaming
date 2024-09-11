@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  right: 0;
+  left: 220px;
+
+  background-color: rgb(22, 22, 22);
+  height: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.greeting {
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+
+  background-color: rgb(39, 39, 39);
+  height: 30px;
+  width: 350px;
+}
+
+.search-box i {
+  margin-left: 15px;
+}
+
+.search-box input {
+  background-color: rgb(39, 39, 39);
+  border: none;
+  margin-left: 8px;
+  outline: none;
+}
+
+.search-box input:focus {
+  border: none;
+  color: white;
+}
+
+.noti-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgb(39, 39, 39);
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}

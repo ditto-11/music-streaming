@@ -1,0 +1,89 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+
+  padding-left: 15px;
+  padding-top: 15px;
+
+  width: 200px;
+  background-color: rgb(12, 6, 26);
+
+  color: white;
+}
+
+.profile,
+.playlist-section,
+.my-favourite-playlist,
+.sidebar-playlist,
+.create-section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.profile {
+  margin-bottom: 30px;
+}
+
+.profile-picture {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.playlist-section {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.playlist-section div {
+  color: rgb(99, 99, 99);
+  font-size: 12px;
+}
+
+.playlist-section button {
+  background-color: rgb(20, 8, 45);
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.more-icon {
+  height: 10px;
+}
+
+.my-favourite-playlist {
+  margin-bottom: 30px;
+}
+
+.heart-icon-container {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.sidebar-playlist {
+  margin-bottom: 30px;
+}
+
+.sidebar-album-cover {
+  height: 35px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.add-icon {
+  height: 25px;
+  margin-right: 10px;
+}
